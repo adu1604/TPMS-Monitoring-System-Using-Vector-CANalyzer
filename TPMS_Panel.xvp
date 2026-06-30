@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="TPMS_Panel">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl14" Children="Controls" ControlName="Static Text 4">
+      <Property Name="Name">StaticTextControl14</Property>
+      <Property Name="Size">77, 13</Property>
+      <Property Name="Location">375, 83</Property>
+      <Property Name="Text">  Warning Light</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl1" ControlName="Warning Light">
+      <Property Name="Name">LEDControl1</Property>
+      <Property Name="Size">41, 40</Property>
+      <Property Name="Location">395, 32</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;16;TPMS;;;Warning;1;;;-1;;;</Property>
+      <Property Name="TabIndex">23</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl13" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl13</Property>
+      <Property Name="Size">66, 13</Property>
+      <Property Name="Location">505, 120</Property>
+      <Property Name="Text">  Temprature</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl12" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl12</Property>
+      <Property Name="Size">59, 13</Property>
+      <Property Name="Location">181, 120</Property>
+      <Property Name="Text">    Pressure</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl11" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl11</Property>
+      <Property Name="Size">62, 13</Property>
+      <Property Name="Location">83, 204</Property>
+      <Property Name="Text">RLPressure</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl10" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl10</Property>
+      <Property Name="Size">77, 13</Property>
+      <Property Name="Location">613, 231</Property>
+      <Property Name="Text">RRTemprature</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl9" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl9</Property>
+      <Property Name="Size">75, 13</Property>
+      <Property Name="Location">613, 204</Property>
+      <Property Name="Text">RLTemprature</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl8" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl8</Property>
+      <Property Name="Size">75, 13</Property>
+      <Property Name="Location">613, 177</Property>
+      <Property Name="Text">FRTemprature</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl7</Property>
+      <Property Name="Size">73, 13</Property>
+      <Property Name="Location">613, 148</Property>
+      <Property Name="Text">FLTemprature</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl6" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl6</Property>
+      <Property Name="Size">64, 13</Property>
+      <Property Name="Location">83, 231</Property>
+      <Property Name="Text">RRPressure</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl5" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl5</Property>
+      <Property Name="Size">0, 13</Property>
+      <Property Name="Location">79, 204</Property>
+      <Property Name="Text">
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl4</Property>
+      <Property Name="Size">63, 13</Property>
+      <Property Name="Location">82, 177</Property>
+      <Property Name="Text">FRPressure</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl3</Property>
+      <Property Name="Size">61, 13</Property>
+      <Property Name="Location">82, 148</Property>
+      <Property Name="Text">FLPressure</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl8" ControlName="LCD Control">
+      <Property Name="Name">LCDControl8</Property>
+      <Property Name="Size">31, 23</Property>
+      <Property Name="Location">519, 228</Property>
+      <Property Name="NumberIntDigits">1</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;16;TPMS_Data;;;RRTemprature;1;;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl7" ControlName="LCD Control">
+      <Property Name="Name">LCDControl7</Property>
+      <Property Name="Size">31, 23</Property>
+      <Property Name="Location">519, 202</Property>
+      <Property Name="NumberIntDigits">1</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;16;TPMS_Data;;;RLTemprature;1;;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl6" ControlName="LCD Control">
+      <Property Name="Name">LCDControl6</Property>
+      <Property Name="Size">31, 23</Property>
+      <Property Name="Location">519, 175</Property>
+      <Property Name="NumberIntDigits">1</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;16;TPMS_Data;;;FRTemprature;1;;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl5" ControlName="LCD Control">
+      <Property Name="Name">LCDControl5</Property>
+      <Property Name="Size">31, 23</Property>
+      <Property Name="Location">519, 148</Property>
+      <Property Name="NumberIntDigits">1</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;16;TPMS_Data;;;FLTemprature;1;;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl4" ControlName="LCD Control">
+      <Property Name="Name">LCDControl4</Property>
+      <Property Name="Size">31, 23</Property>
+      <Property Name="Location">200, 228</Property>
+      <Property Name="NumberIntDigits">1</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;16;TPMS_Data;;;RRPressure;1;;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl3" ControlName="LCD Control">
+      <Property Name="Name">LCDControl3</Property>
+      <Property Name="Size">31, 23</Property>
+      <Property Name="Location">200, 202</Property>
+      <Property Name="NumberIntDigits">1</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;16;TPMS_Data;;;RLPressure;1;;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl2" ControlName="LCD Control">
+      <Property Name="Name">LCDControl2</Property>
+      <Property Name="Size">31, 23</Property>
+      <Property Name="Location">200, 175</Property>
+      <Property Name="NumberIntDigits">1</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;16;TPMS_Data;;;FRPressure;1;;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="LCDControl1" ControlName="LCD Control">
+      <Property Name="Name">LCDControl1</Property>
+      <Property Name="Size">31, 23</Property>
+      <Property Name="Location">200, 148</Property>
+      <Property Name="NumberIntDigits">1</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="SymbolConfiguration">5;16;TPMS_Data;;;FLPressure;1;;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">54, 13</Property>
+      <Property Name="Location">37, 90</Property>
+      <Property Name="Text">     Ignition</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl2" ControlName="Ignition">
+      <Property Name="Name">SwitchControl2</Property>
+      <Property Name="Size">43, 54</Property>
+      <Property Name="Location">48, 32</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SwitchValuesRx">1;2;0;1</Property>
+      <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+      <Property Name="SymbolConfiguration">5;16;Ignition;;;KL15;1;;;-1;;;</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">72, 13</Property>
+      <Property Name="Location">730, 90</Property>
+      <Property Name="Text">TPMS_Switch</Property>
+      <Property Name="ForeColor">ButtonHighlight</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl1" ControlName="TPMS_Switch">
+      <Property Name="Name">SwitchControl1</Property>
+      <Property Name="Size">43, 54</Property>
+      <Property Name="Location">744, 32</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SwitchValuesRx">1;2;0;1</Property>
+      <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+      <Property Name="SymbolConfiguration">5;16;Control;;;TPMS_Switch;1;;;-1;;;</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">827, 411</Property>
+    <Property Name="BackColor">IndianRed</Property>
+  </Object>
+</Panel>

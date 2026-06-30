@@ -1,0 +1,123 @@
+/*@!Encoding:1252*/
+includes
+{
+}
+
+variables
+{
+  message Sensor1Data data1;
+  message Sensor2Data data2;
+
+  msTimer timer1; // FR
+  msTimer timer2; // FL
+  msTimer timer3; // RR
+  msTimer timer4; // RL
+}
+
+/* -------- START -------- */
+on start
+{
+  write("System has started");
+}
+
+/* -------- TPMS SWITCH -------- */
+on sysvar Control::TPMS_Switch
+{
+  write("TPMS_Switch operation is started");
+
+  if(@Control::TPMS_Switch == 1)
+  {
+    write("TPMS switch is ON");
+
+    if(@Ignition::KL15 == 1)
+    {
+      write("Ignition is ON");
+      setTimer(timer1, 500); // FR
+      setTimer(timer2, 500); // FL
+      setTimer(timer3, 500); // RR
+      setTimer(timer4, 500); // RL
+    }
+    else
+    {
+      write("Ignition is OFF");
+    }
+  }
+  else
+  {
+    write("TPMS switch is OFF");
+    cancelTimer(timer1);// Stop all timers
+    cancelTimer(timer2);
+    cancelTimer(timer3);
+    cancelTimer(timer4);
+  }
+}
+
+/* -------- TIMER 1 : FRONT RIGHT -------- */
+on timer timer1
+{
+  data1.byte(0) = 32;   // FRPressure
+  data1.byte(1) = 58;   // FRTemp
+
+  output(data1);
+  write("FR Data Sent");
+
+  setTimer(timer1, 500);
+}
+
+/* -------- TIMER 2 : FRONT LEFT -------- */
+on timer timer2
+{
+  data1.byte(2) = 33;   // FLPressure
+  data1.byte(3) = 60;   // FLTemp
+
+  output(data1);
+  write("FL Data Sent");
+
+  setTimer(timer2, 500);
+}
+
+/* -------- TIMER 3 : REAR RIGHT -------- */
+on timer timer3
+{
+  data2.byte(0) = 30;   // RRPressure
+  data2.byte(1) = 55;   // RRTemp
+
+  output(data2);
+  write("RR Data Sent");
+
+  setTimer(timer3, 500);
+}
+
+
+/* -------- TIMER 4 : REAR LEFT -------- */
+on timer timer4
+{
+  data2.byte(2) = 31;   // RLPressure
+  data2.byte(3) = 57;   // RLTemp
+
+  output(data2);
+  write("RL Data Sent");
+
+  setTimer(timer4, 500);
+}
+
+
+/* -------- IGNITION -------- */
+on sysvar Ignition::KL15
+{
+  if(@Ignition::KL15 == 0)
+  {
+    write("Ignition OFF -> Stop TPMS");
+
+    cancelTimer(timer1);
+    cancelTimer(timer2);
+    cancelTimer(timer3);
+    cancelTimer(timer4);
+  }
+}
+
+/* -------- STOP -------- */
+on stopMeasurement
+{
+  write("System has Turned OFF");
+}
