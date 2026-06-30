@@ -1,32 +1,103 @@
-🚗 TPMS Monitoring System Using Vector CANalyzer
-Overview
-The TPMS Monitoring System is an end-to-end automotive CAN network simulation project developed using Vector CANalyzer. This project emulates the functionality of a real-world Tire Pressure Monitoring System (TPMS) by monitoring tire pressure and temperature data, transmitting signals over a CAN network, and generating warning indications for abnormal conditions.
-The solution includes DBC database development, CAPL scripting, CAN message simulation, and a fully interactive CANalyzer Panel (.xvp) for real-time visualization and validation. Designed with industry-standard automotive tools, this project demonstrates practical applications of CAN communication, ECU behavior simulation, signal monitoring, and network testing.
-Key Highlights
-✅ Custom CAN Database (.dbc) Development
-✅ CAPL-Based Sensor & ECU Simulation
-✅ CAN Message Transmission and Reception
-✅ Real-Time Tire Pressure & Temperature Monitoring
-✅ Low-Pressure Warning Detection Logic
-✅ Interactive CANalyzer Dashboard (.xvp)
-✅ Signal Validation and Network Analysis
-✅ Automotive CAN Communication Testing
-Technologies Used
+# 🚗 TPMS Monitoring System Using Vector CANalyzer
 
-Vector CANalyzer
-CAPL Programming
-CAN Protocol
-DBC (CAN Database)
-CANalyzer Panel Designer (.xvp)
+> End-to-end TPMS simulation and validation project using Vector CANalyzer, DBC development, CAPL scripting, CAN communication analysis, and interactive XVP dashboard visualization.
 
-Project Architecture
-The TPMS sensors generate tire pressure and temperature data, which are transmitted through CAN messages defined in a custom DBC file. CAPL scripts simulate sensor behavior, process signal data, and trigger warning conditions. An interactive CANalyzer panel visualizes system status, enabling real-time monitoring and validation of TPMS functionality.
-Learning Outcomes
-This project provides hands-on experience with:
+---
 
-Automotive CAN Network Simulation
-DBC Creation and Signal Mapping
-CAPL Scripting and Event Handling
-Vehicle Network Analysis
-ECU Communication Validation
-Dashboard and HMI Development using CANalyzer
+## 📋 Project Overview
+
+This project demonstrates the implementation of a Tire Pressure Monitoring System (TPMS) using Vector CANalyzer. The system simulates tire pressure and temperature data over a CAN network, processes signals using CAPL scripts, and displays real-time information through a custom CANalyzer Panel (.xvp).
+
+The project covers the complete development workflow from CAN database creation to panel design, providing practical exposure to automotive CAN communication, network simulation, signal monitoring, and validation.
+
+---
+
+## ✨ Features
+
+- Custom DBC File Development
+- TPMS CAN Message Definition
+- CAPL-Based Sensor Simulation
+- Real-Time Tire Pressure Monitoring
+- Tire Temperature Monitoring
+- Low Pressure Warning Detection
+- Interactive CANalyzer Panel (.xvp)
+- CAN Network Analysis and Validation
+- Signal Transmission & Reception Testing
+
+---
+
+## 🛠️ Technologies Used
+
+- Vector CANalyzer
+- CAPL Programming
+- CAN Protocol
+- CAN Database (.dbc)
+- CANalyzer Panel Designer (.xvp)
+
+---
+
+## 🏗️ Project Workflow
+
+1. Create and configure the TPMS DBC file.
+2. Define TPMS messages and signals.
+3. Develop CAPL scripts for sensor simulation.
+4. Simulate CAN message transmission.
+5. Process and monitor received signals.
+6. Implement warning logic for low pressure conditions.
+7. Design an interactive CANalyzer panel.
+8. Validate system functionality and signal behavior.
+
+---
+
+## 📊 System Functions
+
+### Tire Monitoring
+- Front Left Tire
+- Front Right Tire
+- Rear Left Tire
+- Rear Right Tire
+
+### Monitored Parameters
+- Tire Pressure (PSI/Bar)
+- Tire Temperature (°C)
+
+### Warning Conditions
+- Low Tire Pressure
+- High Tire Temperature
+- Sensor Status Monitoring
+
+---
+
+## 🎯 Learning Objectives
+
+This project provides hands-on experience in:
+
+- Automotive CAN Communication
+- DBC Development
+- CAPL Programming
+- ECU Simulation
+- CAN Network Analysis
+- Signal Validation
+- CANalyzer Panel Design
+
+---
+
+## 📷 Project Artifacts
+
+- TPMS_Database.dbc
+- TPMS_Simulation.can
+- TPMS_CAPL.can
+- TPMS_Panel.xvp
+- Documentation & Test Results
+
+---
+
+## 🚀 Future Enhancements
+
+- CAN FD Support
+- Diagnostic Communication (UDS)
+- Fault Injection Scenarios
+- Data Logging & Reporting
+- Advanced Dashboard Features
+
+---
